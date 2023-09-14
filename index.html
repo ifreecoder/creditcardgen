@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Generator 2023 (UPDATED)</title>
+    <meta name="description" content="Credit Card GEN generates 100% valid test credit card numbers for all major brands with required details such as Expiry and CVV code.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Team Credit Card Gen">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000">
+    <meta name="application-name" content="Credit Card Gen">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="canonical" href="https://www.creditcardgen.com/index.html">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1> <a href="#">Credit Card Generator</a></h1>
+            </div>
+            <ul class="nav-links" id="navLinks">
+            </ul>
+            <div class="burger" id="burgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <div class="form-left">
+                <h2>Credit Card Info</h2>
+                <input id="bin" type="text" maxlength="16" class="bin is-input" placeholder="bin">
+                <input id="cvc" type="text" class="cvc" placeholder="cvc | leave blank to randomize">
+                <div class="select-container">
+                    <select class="month" id="month">
+                        <option value="random">month | random</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select class="year" id="year">
+                        <option value="random">year | random</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2027">2028</option>
+                        <option value="2027">2029</option>
+                    </select>
+                </div>
+                <input id="quantity" type="text" placeholder="quantity" class="quantity" value="10">
+                <!--  <select class="format is-format is-select-option">
+                         <option value="pipe">pipe</option>
+                         <option value="json">json</option>
+                         <option value="xml">xml</option>
+                         <option value="sql">sql</option>
+                         <option value="csv">csv</option>
+                    </select> -->
+                <button class="gen-btn" onclick="generate()">Generate</button>
+            </div>
+            <div class="form-right">
+                <h2>Credit Card Result</h2>
+                <textarea id="result" class="result form-textarea block w-full h-full resize-none font-fallback font-bold tracking-wide" rows="10" placeholder="xxxxxxxxxx" readonly="readonly" data-pxf_il="1"></textarea>
+            </div>
+        </section>
+        <section class="info-section">
+        </section>
+    </main>
+    <footer>
+        <div class="container text-center" data-word-count="13" data-p-count="1"><div class="text-sm text-gray-600"><a href="#" class="px-2">
+                Privacy Policy
+            </a>
+         </div> <p class="text-xs text-gray-500">Copyright © 2023 <span class="text-gray-700"> creditcardgen.com</span></p></div>
+
+        <div class="contact">
+            <p></p>
+        </div>
+    </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="gen.js"></script>
+</body>
+
+</html>

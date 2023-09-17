@@ -61,8 +61,8 @@
         }
 
         function generateYear() {
-            var yearList = ["2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"];
-            var rand_num = Math.floor(Math.random() * 10);
+            var yearList = ["2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"];
+            var rand_num = Math.floor(Math.random() * 8);
             return yearList[rand_num];
         }
 

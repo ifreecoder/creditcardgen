@@ -42,7 +42,7 @@ header {
     display: flex;
     gap: 6px;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 9%;
 }
 .logo img {
     max-width: 100%;
@@ -116,12 +116,10 @@ header {
 
 .form-left {
     flex: 1;
-    padding: 20px;
 }
 
 .form-right {
     flex: 1;
-    padding: 20px;
 }
 
 h2 {
@@ -134,33 +132,70 @@ form {
     flex-wrap: wrap;
 }
 
-input[type="text"],
-select,
-button {
-    width: 100%;
+
+.bin{
     color: #4d4b4b;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 1rem 0 1rem 1rem;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
 }
 
-button {
+.cvc{
+    color: #4d4b4b;
+    margin-bottom: 10px;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.month{
+    color: #4d4b4b;
+    margin-bottom: 10px;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.year{
+    color: #4d4b4b;
+    margin-bottom: 10px;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.quantity{
+    color: #4d4b4b;
+    margin-bottom: 10px;
+    padding: 1rem 0 1rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.gen-btn {
+/*    border: 2px solid #ccc;*/
+    border-radius: 4px;
+    font-size: 16px;
     background-color: #272525;
     color: white;
-    border: none;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     font-weight: 600;
 }
 
 
 textarea {
-    width: 100%;
+/*    width: 100%;*/
     height: 80%;
     color: #343333;
-    padding: 0.5rem 0.75rem;
+/*    padding: 0.5rem 0.75rem;*/
     font-size: 16px;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -209,6 +244,8 @@ footer {
 .form-section {
     display: flex;
     align-items: stretch;
+    justify-content: space-between; /* 水平间隔 */
+    gap: 5%; /* 子元素之间的间隔 */
 }
 
 .form-left,
@@ -223,7 +260,7 @@ footer {
 .select-container {
     display: flex;
     gap: 10px;
-    align-items: center;
+/*    align-items: center;*/
 }
 
 
@@ -241,10 +278,54 @@ footer {
     color: #0056b3;
 }
 
+.desc-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.answer {
+    margin-top: 10px;
+    color: #4b4848;
+    text-align: justify;
+    line-height: 1.5;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.disclaimer-text {
+    margin-top: 10px;
+    color: #4b4848;
+    text-align: justify;
+    line-height: 1.5;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 768px) {
     .logo {
-        margin-left: 20%;
+        margin-left: 9%;
     }
 
     .form-section {
@@ -282,4 +363,5 @@ footer {
     .select-container {
         flex-direction: column;
     }
+
 }

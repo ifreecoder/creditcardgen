@@ -153,6 +153,7 @@ form {
 
 .month{
     color: #4d4b4b;
+    height: auto;
     margin-bottom: 10px;
     padding: 1rem 0 1rem 1rem;
     border: 2px solid #ccc;
@@ -162,6 +163,7 @@ form {
 
 .year{
     color: #4d4b4b;
+    height: auto;
     margin-bottom: 10px;
     padding: 1rem 0 1rem 1rem;
     border: 2px solid #ccc;

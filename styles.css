@@ -15,6 +15,7 @@ body {
     max-width: 1200px;
     margin: 28px auto;
     padding: 20px;
+    background-color: #F6F8FA;
 }
 
 header {
@@ -155,7 +156,6 @@ form {
 
 .month{
     color: #4d4b4b;
-    height: auto;
     margin-bottom: 10px;
     padding: 16px 0 16px 16px;
     border: 2px solid #ccc;
@@ -165,7 +165,7 @@ form {
 
 .year{
     color: #4d4b4b;
-    height: auto;
+    height: 100%;
     margin-bottom: 10px;
     padding: 16px 0 16px 16px;
     border: 2px solid #ccc;

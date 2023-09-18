@@ -380,5 +380,13 @@ table,td,th {
     .select-container {
         flex-direction: column;
     }
+    
+    .month{
+        height: auto;
+    }
+
+    .year{
+        height: auto;
+    }
 
 }

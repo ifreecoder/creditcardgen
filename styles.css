@@ -165,7 +165,6 @@ form {
 
 .year{
     color: #4d4b4b;
-    height: 100%;
     margin-bottom: 10px;
     padding: 16px 0 16px 16px;
     border: 2px solid #ccc;
@@ -380,13 +379,13 @@ table,td,th {
     .select-container {
         flex-direction: column;
     }
-    
+
     .month{
-        height: auto;
+        height: 56px;
     }
 
     .year{
-        height: auto;
+        height: 56px;
     }
 
 }
